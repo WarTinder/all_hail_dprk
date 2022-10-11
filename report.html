@@ -43,6 +43,17 @@
             margin-bottom: 10px;
             margin-top: 10px;
         }
+        
+        .standard_text_style {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #cfd8dc;
+        }
+                
+        .nav_style {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #cfd8dc;
+            font-size: 20px;
+        }
     </style>
   </style>
 </head>
@@ -51,12 +62,12 @@
 
     <!-- Navigation bar -->
     <nav align="center" class="link_card">
-        <a href="index.html" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Home</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="#" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Our Story</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="what_we_do.html" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">What We Do</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="#" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Emmigrate</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="report.html" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Report a Suspect</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="https://www.youtube.com/watch?v=TrS0uNBuG9c" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif; font-size: 20px;" target="_blank">More Information</a>
+        <a href="index.html" class="nav_style">Home</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
+        <a href="#" class="nav_style">Our Story</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
+        <a href="what_we_do.html" class="nav_style">What We Do</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
+        <a href="#" class="nav_style">Emmigrate</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
+        <a href="report.html" class="nav_style">Report a Suspect</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
+        <a href="https://www.youtube.com/watch?v=TrS0uNBuG9c" class="nav_style" target="_blank">More Information</a>
     </nav>
 
     <!-- Main body -->
@@ -66,26 +77,26 @@
     <form method='post' action='/results.html'>
         <table align="center">
             <tr>
-                <td colspan="2"><p style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; color: #ffffff'>Your Information</p></td>
+                <td colspan="2"><p style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; color: #cfd8dc;'>Your Information</p></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_name" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your full name (First Middle Last)</label></td>
+                <td align="right"><label for="your_name" class="standard_text_style">Your full name (First Middle Last)</label></td>
                 <td><input type='text' id='your_name' name='your_name' placeholder='Your full name'></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_email" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your email</label></td>
+                <td align="right"><label for="your_email" class="standard_text_style">Your email</label></td>
                 <td><input type='email' id='your_email' name='your_email' placeholder='blank@gmail.com'></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_bday" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your date of birth</label></td>
+                <td align="right"><label for="your_bday" class="standard_text_style">Your date of birth</label></td>
                 <td><input type="date" id="your_bday" name="your_bday"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_phone" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your phone number (include "-" character)</label></td>
+                <td align="right"><label for="your_phone" class="standard_text_style">Your phone number (include "-" character)</label></td>
                 <td><input type="tel" id="your_phone" name="your_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_country" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your country</label></td>
+                <td align="right"><label for="your_country" class="standard_text_style">Your country</label></td>
                 <td>
                     <select id="your_country" name="your_country" size="1">
                         <option>select a country</option>
@@ -345,31 +356,31 @@
                 </td>
             </tr>
             <tr>
-                <td align="right"><label for="your_prov" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your state/province</label></td>
+                <td align="right"><label for="your_prov" class="standard_text_style">Your state/province</label></td>
                 <td><input type="text" id="your_prov" name="your_prov" placeholder="Your state/province"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_city" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your town/city</label></td>
+                <td align="right"><label for="your_city" class="standard_text_style">Your town/city</label></td>
                 <td><input type="text" id="your_city" name="your_city" placeholder="Your town/city"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_address" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your address</label></td>
+                <td align="right"><label for="your_address" class="standard_text_style">Your address</label></td>
                 <td><input type="text" id="your_address" name="your_address" placeholder="Your address"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_zip" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your postal code</label></td>
+                <td align="right"><label for="your_zip" class="standard_text_style">Your postal code</label></td>
                 <td><input type="text" id="your_zip" name="your_zip" placeholder="Your postal code"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_credit" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your credit card number</label></td>
+                <td align="right"><label for="your_credit" class="standard_text_style">Your credit card number</label></td>
                 <td><input type="text" id="your_credit" name="your_credit" placeholder="Your credit card number"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_cvv" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your CVV</label></td>
+                <td align="right"><label for="your_cvv" class="standard_text_style">Your CVV</label></td>
                 <td><input type="text" id="your_cvv" name="your_cvv" placeholder="Your CVV"></td>
             </tr>
             <tr>
-                <td align="right"><label for="your_ssn" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Your social security number</label></td>
+                <td align="right"><label for="your_ssn" class="standard_text_style">Your social security number</label></td>
                 <td><input type="number" id="your_ssn" name="your_ssn" placeholder="Your SSN"></td>
             </tr>
         </table>
@@ -378,26 +389,26 @@
     <form method='post' action='/results.html'>
         <table align="center">
             <tr>
-                <td colspan="2"><p style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; color: #ffffff'>Suspect's Information</p></td>
+                <td colspan="2"><p style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; color: #cfd8dc;'>Suspect's Information</p></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_name" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's full name (First Middle Last)</label></td>
+                <td align="right"><label for="sus_name" class="standard_text_style">Suspect's full name (First Middle Last)</label></td>
                 <td><input type='text' id='sus_name' name='sus_name' placeholder="Suspect's full name"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_email" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's email</label></td>
+                <td align="right"><label for="sus_email" class="standard_text_style">Suspect's email</label></td>
                 <td><input type='email' id='sus_email' name='sus_email' placeholder='blank@gmail.com'></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_bday" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's date of birth</label></td>
+                <td align="right"><label for="sus_bday" class="standard_text_style">Suspect's date of birth</label></td>
                 <td><input type="date" id="sus_bday" name="sus_bday"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_phone" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's phone number (include "-" character)</label></td>
+                <td align="right"><label for="sus_phone" class="standard_text_style">Suspect's phone number (include "-" character)</label></td>
                 <td><input type="tel" id="sus_phone" name="sus_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_country" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's country</label></td>
+                <td align="right"><label for="sus_country" class="standard_text_style">Suspect's country</label></td>
                 <td>
                     <select id="sus_country" name="sus_country" size="1">
                         <option>select a country</option>
@@ -657,31 +668,31 @@
                 </td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_prov" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's state/province</label></td>
+                <td align="right"><label for="sus_prov" class="standard_text_style">Suspect's state/province</label></td>
                 <td><input type="text" id="sus_prov" name="sus_prov" placeholder="Suspect's state/province"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_city" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's town/city</label></td>
+                <td align="right"><label for="sus_city" class="standard_text_style">Suspect's town/city</label></td>
                 <td><input type="text" id="sus_city" name="sus_city" placeholder="Suspect's town/city"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_address" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's address</label></td>
+                <td align="right"><label for="sus_address" class="standard_text_style">Suspect's address</label></td>
                 <td><input type="text" id="sus_address" name="sus_address" placeholder="Suspect's address"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_zip" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's postal code</label></td>
+                <td align="right"><label for="sus_zip" class="standard_text_style">Suspect's postal code</label></td>
                 <td><input type="text" id="sus_zip" name="sus_zip" placeholder="Suspect's postal code"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_credit" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's credit card number</label></td>
+                <td align="right"><label for="sus_credit" class="standard_text_style">Suspect's credit card number</label></td>
                 <td><input type="text" id="sus_credit" name="sus_credit" placeholder="Suspect's credit card number"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_cvv" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's CVV</label></td>
+                <td align="right"><label for="sus_cvv" class="standard_text_style">Suspect's CVV</label></td>
                 <td><input type="text" id="sus_cvv" name="sus_cvv" placeholder="Suspect's CVV"></td>
             </tr>
             <tr>
-                <td align="right"><label for="sus_ssn" style="color: #cfd8dc; font-family: Arial, Helvetica, sans-serif">Suspect's social security number</label></td>
+                <td align="right"><label for="sus_ssn" class="standard_text_style">Suspect's social security number</label></td>
                 <td><input type="number" id="sus_ssn" name="sus_ssn" placeholder="Suspect's SSN"></td>
             </tr>
             <tr>
