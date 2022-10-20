@@ -1,5 +1,4 @@
 .card {
-    border: 2px solid #000000;
     background: #182331;
     padding: 20px;
     margin-left: 10;
@@ -9,7 +8,6 @@
 }
 
 .link_card {
-    border: 2px solid #000000;
     background: #263238;
     padding: 20px;
     margin-left: 10;
@@ -19,7 +17,6 @@
 }
 
 .sub_img_card {
-    border: 2px solid #000000;
     background: #13191b;
     padding: 20px;
     margin-left: 10;
@@ -29,7 +26,6 @@
 }
 
 .main_card {
-    border: 2px solid #000000;
     background: #13191b;
     padding: 20px;
     margin-left: 10;
@@ -39,7 +35,6 @@
 }
 
 .footer_card {
-    border: 2px solid #000000;
     background: #0d1113;
     padding: 20px;
     margin-left: 10;
