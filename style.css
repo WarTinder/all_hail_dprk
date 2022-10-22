@@ -9,7 +9,7 @@
 
 .link_card {
     background: #263238;
-    padding: 20px;
+    padding: 3px;
     margin-left: 10;
     margin-right: 10;
     margin-top: 10px;
@@ -146,8 +146,28 @@ figcaption {
     display: flex;
 }
 
-table:not(#tank_nav) a.button {
+table a.button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.nav_button {
+    background-color: #263238;
+    /* border: 2px solid #cfd8dc; */
+    color: #cfd8dc;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.nav_button1:hover {
+    background-color: #cfd8dc;
+    color: #263238;
 }
