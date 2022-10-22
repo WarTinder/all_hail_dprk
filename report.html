@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DPRK - Report a Suspect</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #182331;">
-    <h1 style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 75px; color: #ffffff'>Democrat People's Republic of Korea</h1>
+    <h1 class="website_title">"Democratic" People's Republic of Korea</h1>
 
     <!-- Navigation bar -->
     <nav align="center" class="link_card">
-        <a href="index.html" class="nav_style">Home</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="#" class="nav_style">Our Story</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="what_we_do.html" class="nav_style">What We Do</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="#" class="nav_style">Emmigrate</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
-        <a href="report.html" class="nav_style">Report a Suspect</a> <span style="color: #cfd8dc; font-size: 20px;">|</span>
+        <a href="index.html" class="nav_style">Home</a> <span class="nav_span">|</span>
+        <a href="#" class="nav_style">Our Story</a> <span class="nav_span">|</span>
+        <a href="what_we_do.html" class="nav_style">What We Do</a> <span class="nav_span">|</span>
+        <a href="mil-nav.html" class="nav_style">Military</a> <span class="nav_span">|</span>
+        <a href="#" class="nav_style">Immigrate</a> <span class="nav_span">|</span>
+        <a href="report.html" class="nav_style">Report a Suspect</a> <span class="nav_span">|</span>
         <a href="https://www.youtube.com/watch?v=TrS0uNBuG9c" class="nav_style" target="_blank">More Information</a>
     </nav>
 
     <!-- Main body -->
-    <h2 style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px; color: #cfd8dc'>Report a Suspect</h2>
-    <p style='text-align: center; font-family: Arial, Helvetica, sans-serif; color: #cfd8dc'>Leave all unknown information about the suspect blank</p>
+    <h2 class="page_title">Report a Suspect</h2>
+    <div class="main_card">
+        <p style='text-align: center;' class="standard_text_style">Leave all unknown and/or inapplicable information blank</p>
+    </div>
     <br>
     <form method='post' action='/results.html'>
         <table align="center">
             <tr>
-                <td colspan="2"><p style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; color: #cfd8dc;'>Your Information</p></td>
+                <td colspan="2"><p class="section_title">Your Information</p></td>
             </tr>
             <tr>
                 <td align="right"><label for="your_name" class="standard_text_style">Your full name (First Middle Last)</label></td>
@@ -337,13 +343,17 @@
                 <td align="right"><label for="your_maid_name" class="standard_text_style">Your mother's maiden name</label></td>
                 <td><input type="text" id="your_maid_name" name="your_maid_name" placeholder="Your mother's maiden name'"></td>
             </tr>
+            <tr>
+                <td align="right"><label for="your_da" class="standard_text_style">Your DeviantArt username</label></td>
+                <td><input type="text" id="your_da" name="your_da" placeholder="Your DeviantArt username"></td>
+            </tr>
         </table>
     </form>
     <br><br>
     <form method='post' action='/results.html'>
         <table align="center">
             <tr>
-                <td colspan="2"><p style='text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; color: #cfd8dc;'>Suspect's Information</p></td>
+                <td colspan="2"><p class="section_title">Suspect's Information</p></td>
             </tr>
             <tr>
                 <td align="right"><label for="sus_name" class="standard_text_style">Suspect's full name (First Middle Last)</label></td>
@@ -654,12 +664,16 @@
                 <td><input type="text" id="sus_maid_name" name="sus_maid_name" placeholder="Suspect's mother's maiden name'"></td>
             </tr>
             <tr>
+                <td align="right"><label for="sus_da" class="standard_text_style">Suspect's DeviantArt username</label></td>
+                <td><input type="text" id="sus_da" name="sus_da" placeholder="Suspect's DeviantArt username"></td>
+            </tr>
+            <tr>
                 <td align='right'><input type='submit' value='Submit info'></td>
                 <td align='left'><input type='reset' value='Clear info'</td>
             </tr>
         </table>
     </form>
     <footer align="center" class="footer_card">
-        <p style="font-family: Arial, Helvetica, sans-serif; color: #446e69">&copy; 1948-2022 Democratic People's Republic of Korea</p>
+        <p class="footer_text">&copy; 1948-2022 Democratic People's Republic of Korea</p>
     </footer>
 </body>
